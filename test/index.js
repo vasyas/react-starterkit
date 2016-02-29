@@ -7,7 +7,7 @@ global.AssertionError = chai.AssertionError;
 global.Assertion = chai.Assertion;
 global.assert = chai.assert;
 
-// comment for running tests from nodejs
+// uncomment for running tests from browser
 //var context = require.context('.', true, /.+\.test\.jsx?$/);
 //context.keys().forEach(context);
 //module.exports = context;

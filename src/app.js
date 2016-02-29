@@ -5,8 +5,6 @@ import { Link } from 'react-router';
 const initialState = { greeting: 'None!' };
 
 export function reducer(state = initialState, action) {
-    console.log(arguments);
-
     if (action.type == 'CREATE_GREETING')
         return { greeting: 'mighty' };
 
