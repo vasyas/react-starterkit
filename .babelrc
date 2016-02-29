@@ -1,0 +1,4 @@
+{
+  "presets": ["es2015", "stage-1", "react"],
+  "retainLines": "true" // required for runnings tests using Mocha and getting correct stack traces
+}
