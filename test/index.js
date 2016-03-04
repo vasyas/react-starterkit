@@ -7,7 +7,9 @@ global.AssertionError = chai.AssertionError;
 global.Assertion = chai.Assertion;
 global.assert = chai.assert;
 
-// uncomment for running tests from browser
-//var context = require.context('.', true, /.+\.test\.jsx?$/);
-//context.keys().forEach(context);
-//module.exports = context;
+// export module for running within webpack
+if (typeof __webpack_require__ === 'function') {
+    let context = require.context('.', true, /.+\.test\.jsx?$/);
+    context.keys().forEach(context);
+    module.exports = context;
+}
